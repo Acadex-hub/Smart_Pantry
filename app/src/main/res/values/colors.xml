@@ -1,0 +1,11 @@
+<resources>
+    <color name="green_deep">#2F5D3A</color>
+    <color name="green">#4C8B52</color>
+    <color name="green_soft">#DDEBD5</color>
+    <color name="cream">#FFF8EC</color>
+    <color name="tomato">#E8573F</color>
+    <color name="mustard">#E9A72B</color>
+    <color name="ink">#2B2A26</color>
+    <color name="muted">#7A766B</color>
+    <color name="white">#FFFFFF</color>
+</resources>
