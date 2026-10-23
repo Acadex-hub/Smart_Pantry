@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <TextView android:id="@+id/tvBack" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="← Back" android:textColor="@color/green" android:textStyle="bold" android:padding="4dp"/>
+        <TextView android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Add ingredient" android:fontFamily="serif" android:textStyle="bold" android:textSize="30sp"
+            android:textColor="@color/green_deep" android:layout_marginTop="12dp" android:layout_marginBottom="20dp"/>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilName" android:layout_width="match_parent"
+            android:layout_height="wrap_content" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:hint="Ingredient name (e.g. Tomatoes)">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etName" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:inputType="textCapSentences"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilQty" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:hint="Quantity">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etQty" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Unit"
+            android:textColor="@color/muted" android:layout_marginTop="16dp"/>
+        <Spinner android:id="@+id/spUnit" android:layout_width="match_parent" android:layout_height="52dp"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnExpiry" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="📅 Expiry date (optional)"
+            style="@style/Widget.Material3.Button.OutlinedButton"/>
+        <TextView android:id="@+id/btnClearExpiry" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Clear date" android:textColor="@color/tomato" android:padding="8dp" android:visibility="gone"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnSave" android:layout_width="match_parent"
+            android:layout_height="60dp" android:layout_marginTop="24dp" android:text="Save to pantry"
+            app:cornerRadius="30dp" app:backgroundTint="@color/green_deep"/>
+    </LinearLayout>
+</ScrollView>
