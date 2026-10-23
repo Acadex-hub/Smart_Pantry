@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_pantry" android:icon="@drawable/ic_pantry" android:title="Pantry"/>
+    <item android:id="@+id/nav_cook" android:icon="@drawable/ic_cook" android:title="Cook"/>
+    <item android:id="@+id/nav_settings" android:icon="@drawable/ic_settings" android:title="Settings"/>
+</menu>
